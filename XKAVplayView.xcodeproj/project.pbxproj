@@ -13,6 +13,9 @@
 		182CE0FC221A7515001E274B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 182CE0FB221A7515001E274B /* Assets.xcassets */; };
 		182CE0FF221A7515001E274B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182CE0FD221A7515001E274B /* LaunchScreen.storyboard */; };
 		182CE102221A7515001E274B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 182CE101221A7515001E274B /* main.m */; };
+		182CE160221A7605001E274B /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 182CE122221A7605001E274B /* video.mp4 */; };
+		182CE168221A7605001E274B /* UIView+EXTION.m in Sources */ = {isa = PBXBuildFile; fileRef = 182CE135221A7605001E274B /* UIView+EXTION.m */; };
+		182CE179221A76AC001E274B /* XKPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182CE178221A76AC001E274B /* XKPlayView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,11 @@
 		182CE0FE221A7515001E274B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		182CE100221A7515001E274B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		182CE101221A7515001E274B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		182CE120221A7605001E274B /* UIView+EXTION.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+EXTION.h"; sourceTree = "<group>"; };
+		182CE122221A7605001E274B /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
+		182CE135221A7605001E274B /* UIView+EXTION.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+EXTION.m"; sourceTree = "<group>"; };
+		182CE177221A76AC001E274B /* XKPlayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKPlayView.h; sourceTree = "<group>"; };
+		182CE178221A76AC001E274B /* XKPlayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKPlayView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 		182CE0F1221A7515001E274B /* XKAVplayView */ = {
 			isa = PBXGroup;
 			children = (
+				182CE108221A7605001E274B /* XKAVPlay */,
 				182CE0F2221A7515001E274B /* AppDelegate.h */,
 				182CE0F3221A7515001E274B /* AppDelegate.m */,
 				182CE0F5221A7515001E274B /* ViewController.h */,
@@ -69,6 +78,18 @@
 				182CE101221A7515001E274B /* main.m */,
 			);
 			path = XKAVplayView;
+			sourceTree = "<group>";
+		};
+		182CE108221A7605001E274B /* XKAVPlay */ = {
+			isa = PBXGroup;
+			children = (
+				182CE122221A7605001E274B /* video.mp4 */,
+				182CE120221A7605001E274B /* UIView+EXTION.h */,
+				182CE135221A7605001E274B /* UIView+EXTION.m */,
+				182CE177221A76AC001E274B /* XKPlayView.h */,
+				182CE178221A76AC001E274B /* XKPlayView.m */,
+			);
+			path = XKAVPlay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +150,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182CE160221A7605001E274B /* video.mp4 in Resources */,
 				182CE0FF221A7515001E274B /* LaunchScreen.storyboard in Resources */,
 				182CE0FC221A7515001E274B /* Assets.xcassets in Resources */,
 				182CE0FA221A7515001E274B /* Main.storyboard in Resources */,
@@ -143,6 +165,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				182CE0F7221A7515001E274B /* ViewController.m in Sources */,
+				182CE168221A7605001E274B /* UIView+EXTION.m in Sources */,
+				182CE179221A76AC001E274B /* XKPlayView.m in Sources */,
 				182CE102221A7515001E274B /* main.m in Sources */,
 				182CE0F4221A7515001E274B /* AppDelegate.m in Sources */,
 			);
@@ -279,8 +303,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9FWR355Y7Z;
+				DEVELOPMENT_TEAM = 2VPN4L2YU2;
 				INFOPLIST_FILE = XKAVplayView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xk.XKAVplayView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -293,8 +318,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9FWR355Y7Z;
+				DEVELOPMENT_TEAM = 2VPN4L2YU2;
 				INFOPLIST_FILE = XKAVplayView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xk.XKAVplayView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
